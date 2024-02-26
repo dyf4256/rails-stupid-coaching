@@ -1,0 +1,13 @@
+<div class="container d-flex flex-column">
+  <h1>Answer</h1>
+  <div class="answer flex-grow-1">
+    <p><%= @question %></p>
+    <p class="fst-italic">-You</p>
+  </div>
+  <br>
+  <div class="answer flex-grow-1" id="coach">
+    <p><%= @answer %></p>
+    <p class="fst-italic">-Your coach</p>
+  </div>
+  <%= link_to("Ask again", ask_path) %>
+</div>
